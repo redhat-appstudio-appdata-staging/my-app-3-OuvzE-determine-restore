@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: my-app-3
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/nmukherj-tenant/my-app-3/my-app-3@sha256:0f4351e3303a4826cf82c47606307c16054a3ba2f19d7f4430fcb2d441be4a65
+        name: container-image
+        resources: {}
+status: {}
